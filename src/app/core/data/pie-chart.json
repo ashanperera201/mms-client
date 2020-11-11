@@ -1,0 +1,41 @@
+{
+    "chart": {
+        "caption": "JR by Departments",
+        "smartLineThickness": "2",
+        "pieRadius": "100",
+        "bgColor": "#ffffff",
+        "startingAngle": "310",
+        "showLegend": "1",
+        "centerLabelBold": "1",
+        "showTooltip": "0",
+        "showPercentValues": "1",
+        "legendShadow": "30",
+        "labelFontColor": "#ffffff",
+        "decimals": "0",
+        "theme": "fusion",
+        "valuePosition": "inside",
+        "minAngleForValue": "75",
+        "enablesmartLabel": "0",
+        "alignCaptionWithCanvas": "1",
+        "captionHorizontalPadding": "2",
+        "captionAlignment": "left"
+    },
+    "data": [
+        {
+            "label": "Food",
+            "value": "28504"
+        },
+        {
+            "label": "Apparels",
+            "value": "14633"
+        },
+        {
+            "label": "Electronics",
+            "value": "10507"
+        },
+        {
+            "label": "Household",
+            "value": "4910"
+        }
+    ]
+}

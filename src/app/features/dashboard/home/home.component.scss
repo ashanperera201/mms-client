@@ -1,0 +1,203 @@
+@import "../../../../styles/themes/colour-variable";
+@import "../../../../styles/utils/mixins";
+@import "../../../../styles/utils/responsive";
+
+.header-section {
+    padding: 0 2rem;
+    .filtering-tiles {
+        > ul {
+            list-style-type: none;
+            width: 100%;
+            height: 3rem;
+        }
+        li {
+            font-family: Roboto;
+            cursor: pointer;
+            text-align: center;
+            background-clip: padding-box;
+            text-align: left;
+            font: normal normal normal 20px/26px Roboto;
+            letter-spacing: 0px;
+            color: $header-font-colour;
+            opacity: 1;
+            font-size: 1.7rem;
+            position: relative;
+            &:not(:first-child) {
+                margin-left: 2rem;
+            }
+        }
+        li:hover {
+            &:not(:last-child) {
+                color: $bright-blue;
+                opacity: 1;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    width: 50%;
+                    left: 0;
+                    bottom: 0;
+                    transform: translateX(50%);
+                    height: 3px;
+                    background-color: $heigher-bright-blue;
+                }
+            }
+        }
+    }
+
+    h1 {
+        padding: 1rem;
+        text-align: left;
+        font: normal normal normal 25px/33px Roboto;
+        letter-spacing: 0px;
+        color: $header-font-colour;
+        opacity: 1;
+        font-size: 2.5rem;
+    }
+}
+
+.widget-container {
+    padding: 1rem;
+    &--body {
+        flex: 0 1 25%;
+        height: 30rem;
+        width: 20rem;
+        margin: 0.5rem;
+        @include respond(tab-land) {
+            width: 100% !important;
+        }
+    }
+}
+
+.job-request-board {
+    &--header {
+        padding: 2rem;
+        > h3 {
+            color: $header-font-colour;
+            font-size: 2.5rem;
+            text-align: left;
+            opacity: 1;
+        }
+
+        .view-actions {
+            width: 6%;
+            > img {
+                &:not(:last-child) {
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+
+    &--body {
+        flex: 0 1 25%;
+        margin: 0.5rem 0.5rem;
+        padding: 1rem;
+        background: $request-background 0% 0% no-repeat padding-box;
+
+        @include respond(tab-land) {
+            margin: 0.5rem 0.5rem !important;
+        }
+
+        @include respond(phone) {
+            margin: 0.5rem 0.5rem !important;
+            padding: 0;
+        }
+
+        .request {
+            opacity: 1;
+            height: auto;
+
+            &--ee {
+                background: $lower-light-blue 0% 0% no-repeat padding-box;
+                @include request-wrapper();
+            }
+
+            &--mm {
+                background: $lower-light-green 0% 0% no-repeat padding-box;
+                @include request-wrapper();
+            }
+
+            &--project {
+                background: $lower-light-pink 0% 0% no-repeat padding-box;
+                @include request-wrapper();
+            }
+
+            * > {
+                @include respond(phone) {
+                    margin: 1rem !important;
+                }
+            }
+        }
+    }
+}
+
+.badge {
+    text-align: center;
+    width: 58px;
+    height: 22px;
+    border-radius: 11px;
+    opacity: 1;
+
+    &--ee {
+        background: $batch-primary 0% 0% no-repeat padding-box;
+    }
+    &--mm {
+        background: $batch-green 0% 0% no-repeat padding-box;
+    }
+    &--project {
+        background: $batch-red 0% 0% no-repeat padding-box;
+    }
+}
+
+.content {
+    text-align: left;
+    font: normal normal normal 23px/30px Roboto;
+    @include respond(laptop) {
+        font: normal normal normal 18px/25px Roboto;
+    }
+    @include respond(tab-land) {
+        font: normal normal normal 14px/25px Roboto;
+    }
+    letter-spacing: 0px;
+    color: $request-content-colour;
+    opacity: 1;
+}
+
+.content-footer {
+    &--sub-content {
+        > p {
+            @include respond(laptop) {
+                font-size: 1rem !important;
+            }
+        }
+
+        > img {
+            margin: 0 1rem;
+        }
+        > span {
+            font: normal normal normal 13px/18px Roboto;
+            letter-spacing: 0px;
+            color: $footer-header;
+            opacity: 1;
+        }
+    }
+}
+
+.progress-header {
+    > p {
+        font: normal normal normal 9px/11px Roboto;
+        letter-spacing: 0px;
+        color: $progress-header;
+        opacity: 1;
+    }
+}
+
+.clock-section {
+    > p {
+        font: normal normal normal 12px/16px Roboto;
+        letter-spacing: 0px;
+        color: $sub-header;
+        opacity: 1;
+        margin-left: 1rem;
+    }
+}

@@ -1,0 +1,89 @@
+@import "../../../../styles/themes/colour-variable";
+@import "../../../../styles/utils/responsive";
+
+.auth-container {
+    left: 0px;
+    height: 100vh;
+    width: 100%;
+    background: transparent url(../../../../assets/backgrounds/login-background.png) 0% 0% no-repeat padding-box;
+    background-size: cover;
+    opacity: 1;
+
+    &__login {
+        width: 30%;
+        @include respond(tab-land) {
+            width: 48% !important;
+        }
+
+        width: 30%;
+        height: auto;
+        background: rgba(255, 255, 255, 12%);
+        backdrop-filter: blur(0.21px) brightness(83%);
+        -webkit-backdrop-filter: blur(0.21px) brightness(83%);
+        border-radius: 2.5rem;
+
+        &--header-section {
+            width: 100%;
+            height: 8rem;
+            margin-top: 4rem;
+
+            > span {
+                font-size: 4rem;
+                color: $pure-white;
+                font-weight: bold;
+                margin-left: 2rem;
+            }
+        }
+
+        &--body-section {
+            margin-top: 1rem;
+
+            ::ng-deep {
+                .mat-form-field-appearance-outline .mat-form-field-outline {
+                    color: $pure-white;
+                }
+                mat-form-field {
+                    width: 80%;
+                    .mat-hint,
+                    input,
+                    ::placeholder,
+                    .mat-form-field-label {
+                        color: $pure-white;
+                    }
+                }
+            }
+
+            .remember-me {
+                width: 80%;
+            }
+
+            mat-label {
+                color: $pure-white;
+            }
+
+            button {
+                width: 80% !important;
+                height: 5rem;
+                margin-top: 2rem;
+                border-radius: 1rem;
+            }
+
+            .qr-code {
+                height: 12rem;
+
+                > img {
+                    cursor: pointer;
+                }
+            }
+
+            a {
+                text-decoration: underline;
+                font: normal normal 300 15px/20px Roboto;
+                letter-spacing: 0px;
+                color: $pure-white;
+                padding-bottom: 2rem;
+                cursor: pointer;
+            }
+        }
+    }
+}

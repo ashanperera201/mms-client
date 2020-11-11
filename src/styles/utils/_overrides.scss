@@ -1,0 +1,31 @@
+@import "./responsive";
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.mat-nav-list .mat-list-item:hover {
+    background: transparent linear-gradient(102deg, #65b1ff 0%, #8083fe 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    color: #ffff !important;
+}
+
+.mat-nav-list .mat-list-item:focus {
+    background: none !important;
+    opacity: 1;
+}
+
+.request {
+    &--header {
+        > h3 {
+            font: normal normal normal 18px/25px Roboto !important;
+            @include respond(laptop){
+                font: normal normal normal 14px/20px Roboto !important;
+            }
+            letter-spacing: 0px !important;
+        }
+    }
+}

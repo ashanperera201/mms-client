@@ -1,0 +1,32 @@
+<div class="auth-container flex flex-row flex-justify-center flex-align-center">
+    <div class="auth-container__login">
+        <div class="flex flex-justify-center flex-justify-center auth-container__login--header-section">
+            <img src="../../../../assets/icons/Layer_x0020_1.svg" alt="Layer_x0020_1">
+            <span>Azbil MMS</span>
+        </div>
+        <form class="flex flex-column flex-align-center auth-container__login--body-section" autocomplete="off">
+            <mat-form-field appearance="outline">
+                <mat-label>User Name</mat-label>
+                <input matInput placeholder="User Name" [(ngModel)]="userName" name="userName">
+                <img matSuffix src="../../../../assets/icons/male-user-shadow.svg" alt="male-user-shadow">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Password</mat-label>
+                <input type="password" matInput placeholder="Password" [(ngModel)]="password" name="password">
+                <img matSuffix src="../../../../assets/icons/padlock.svg" alt="male-user-shadow">
+            </mat-form-field>
+
+            <div class="flex flex-justify-center flex-align-center remember-me">
+                <mat-label>Remember me</mat-label>
+                <mat-slide-toggle color="primary"></mat-slide-toggle>
+            </div>
+            <button mat-raised-button (click)="proceedLogin()">Login</button>
+            <div class="flex flex-column flex-justify-space-around qr-code">
+                <img src="../../../../assets/icons/qr-code.svg" alt="qr-code">
+                <mat-label>Scan QR Code</mat-label>
+            </div>
+            <a>Forgot password</a>
+        </form>
+    </div>
+</div>
