@@ -1,31 +1,25 @@
 @mixin side-nav-icons {
     .icon-icon_calendar:before {
-        content: "\e902";
         color: #7e7e7e;
     }
 
     .icon-icon_dashboard:before {
-        content: "\e903";
         color: #7e7e7e;
     }
 
     .icon-speed:before {
-        content: "\e900";
         color: #7e7e7e;
     }
 
     .icon-google-docs:before {
-        content: "\e901";
         color: #7e7e7e;
     }
 
     .icon-search:before {
-        content: "\e909";
         color: #7e7e7e;
     }
 
     .icon-team:before {
-        content: "\e90a";
         color: #7e7e7e;
     }
 

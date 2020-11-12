@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve -o --port=4300 ",
     "build": "ng build",
-    "build-prod":"ng build --prod --output-hashing=none",
+    "build-prod": "ng build --prod --output-hashing=none",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

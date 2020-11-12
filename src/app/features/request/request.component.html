@@ -1,2 +1,283 @@
-<h1>hello world</h1>
 <router-outlet></router-outlet>
+
+<section class="request-job">
+
+    <!-- request job step list -->
+    <div class="request-job__steps">
+        <ul class="step-list">
+            <li class="step-list__item">
+                <a class="step-list__link active">1</a>
+            </li>
+            <li class="step-list__item">
+                <a class="step-list__link">2</a>
+            </li>
+            <li class="step-list__item">
+                <a class="step-list__link">3</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- middle content -->
+    <div class="request-job__content">        
+        <h3>Choose Job Request Type</h3>
+        <!-- <h3>EE Job Request</h3> -->
+
+        <!-- job types -->
+        <div class="request-job__types">
+            <ul class="job-types">
+                <li class="job-types__item">
+                    <a class="job-types__link active">
+                        <div class="job-types__item-icon">
+                            <span class="icon-Layer_x0020_1"></span>
+                        </div>
+                        <h4 class="job-types__item-title">EE Job Request</h4>
+                        <p class="job-types__item-content">
+                            Lorem ipsum dolor sit amet, soluta detraxit nec ne. Vim admodum lobortis eu,
+                        </p>
+                    </a>
+                </li>
+                <li class="job-types__item">
+                    <a class="job-types__link">
+                        <div class="job-types__item-icon">
+                            <span class="icon-Engineering"></span>  
+                        </div>
+                        <h4 class="job-types__item-title">M&F Job Request</h4>
+                        <p class="job-types__item-content">
+                            Lorem ipsum dolor sit amet, soluta detraxit nec ne. Vim admodum lobortis eu,
+                        </p>
+                    </a>
+                </li>
+                <li class="job-types__item">
+                    <a class="job-types__link">
+                        <div class="job-types__item-icon">
+                            <span class="icon-analytics"></span>
+                        </div>
+                        <h4 class="job-types__item-title">Project Job Request</h4>
+                        <p class="job-types__item-content">
+                            Lorem ipsum dolor sit amet, soluta detraxit nec ne. Vim admodum lobortis eu,
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <form action="" class="ee-job-request">
+            <div class="form-row-group">
+                <div class="form-row">
+                    <div class="input-label"><label class="required">Select Machine</label></div>
+                    <button class="btn btn--select-machine btn--select-machine-max">
+                        Scan QR code
+                        <span class="icon-qr-code"></span>
+                    </button>
+                    <button class="btn btn--select-machine btn--select-machine-max">
+                        Enter Manually
+                        <span class="icon-XMLID_1190"></span>
+                    </button>
+                </div>
+    
+                <div class="form-row">
+                    <div class="input-label"><label for="Problerm" class="required">Problerm</label></div>
+                    <input id="Problerm" type="text" class="form-control maxw">
+                </div>
+    
+                <div class="form-row">
+                    <div class="input-label"><label for="FaultType" class="required">Fault Type</label></div>
+                    <select id="FaultType" name="" class="form-control maxw">
+                        <option value="" disabled selected>Fault Type</option>
+                    </select>
+                </div>
+    
+                <div class="form-row">
+                    <div class="input-label"><label for="Description" class="required">Description</label></div>
+                    <textarea id="Description" class="form-control maxw" rows="50"></textarea>
+                </div>
+    
+                <div class="form-row">
+                    <div class="input-label"><label for="Priority" class="required">Priority</label></div>
+                    <select name="" class="form-control minw" id="Priority">
+                        <option value="">High</option>
+                    </select>
+                </div>
+            </div>
+            <div class="btn-footer">
+                <button class="btn btn--info minw"> < Previous</button>
+                <button class="btn btn--info minw"> Next > </button>
+            </div>
+        </form>
+        <form action="" class="ee-job-request">
+            <div class="form-row-group">
+                <div class="form-row">
+                    <div class="input-label"><label class="required">Select Machine</label></div>
+                    <div class="form-group"><label for="">Department</label><input id="Problerm" type="text" class="form-control"></div>
+                    <div class="form-group"><label for="">Equipment Type</label><input id="Problerm" type="text" class="form-control"></div>
+                    <div class="form-group"><label for="">Equipment Name</label><input id="Problerm" type="text" class="form-control"></div>
+                    <div class="btn-row">
+                        <button class="btn btn--select-machine btn--select-machine-min">
+                            <span class="icon-qr-code"></span>
+                        </button>
+                        <button class="btn btn--select-machine btn--select-machine-min">
+                            <span class="icon-XMLID_1190"></span>
+                        </button>
+                    </div>
+                </div>
+    
+                <div class="form-row">
+                    <div class="input-label"><label for="Problerm" class="required">Problerm</label></div>
+                    <input id="Problerm" type="text" class="form-control maxw">
+                </div>
+    
+                <div class="form-row">
+                    <div class="input-label"><label for="FaultType" class="required">Fault Type</label></div>
+                    <select id="FaultType" name="" class="form-control maxw">
+                        <option value="" disabled selected>Fault Type</option>
+                    </select>
+                </div>
+    
+                <div class="form-row">
+                    <div class="input-label"><label for="Description" class="required">Description</label></div>
+                    <textarea id="Description" class="form-control maxw" rows="50"></textarea>
+                </div>
+    
+                <div class="form-row">
+                    <div class="input-label"><label for="Priority" class="required">Priority</label></div>
+                    <select name="" class="form-control minw" id="Priority">
+                        <option value="">High</option>
+                    </select>
+                </div>
+            </div>
+            <div class="btn-footer">
+                <button class="btn btn--info minw"> < Previous</button>
+                <button class="btn btn--info minw"> Next > </button>
+            </div>
+        </form>
+        <form action="" class="ee-job-request">
+            <div class="ee-job-request__row">
+                <div class="ee-job-request__col ee-job-request__col--header">
+                    <h4>Suggested Assignee</h4>
+                </div>
+                <div class="ee-job-request__col ee-job-request__col--header">
+                    <h4>Notify to (CC)</h4>
+                </div>
+                <div class="ee-job-request__col ee-job-request__col--header">
+                    <h4 data-info="( Max 5 files allowed )">Attachments</h4>
+                </div>
+            </div>
+            <div class="ee-job-request__row">
+                <div class="ee-job-request__col">
+                    <a class="upload-contents">
+                        
+                    </a>
+                </div>
+                <div class="ee-job-request__col">
+                    <a class="upload-contents">
+                        
+                    </a>
+                </div>
+                <div class="ee-job-request__col">
+                    <a class="upload-contents">
+                        
+                    </a>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+<section class="custom-modal">
+    <div class="custom-modal__left">
+        <div class="custom-modal__left-header">
+            <div class="custom-modal__rid">R. ID : 3260</div>
+            <div class="custom-modal__ee"></div>
+            <h4 class="custom-modal__title">Fuse break down, Trip issue</h4>
+            <p class="custom-modal__time">5 August, 2020  11.55 AM</p>
+            <p class="custom-modal__creted-by">Created by <span>Hwang Lee</span></p>
+            <div class="badge-group">
+                <span class="badge badge--danger">High</span>
+                <span class="badge badge--success">Eq.Type</span>
+                <span class="badge badge--gold">Eq.Name</span>
+            </div>
+        </div>
+        <div class="custom-modal__left-content">
+            <div class="assign-notify">
+                <div class="assign-notify__assign">
+                    <h4 class="assign-notify__title">Assign to</h4>
+                    <div class="assign-notify__assignes">
+                        <div class="assign-notify__assign-people">
+                            <img src="../../../assets/icons/logged-person.png" alt="" class="assign-notify__assign-people-img"> 
+                            <p class="assign-notify__assign-people-name">Jhon Dav</p>   
+                        </div>
+                        <div class="assign-notify__assign-people">
+                            <img src="../../../assets/icons/logged-person.png" alt="" class="assign-notify__assign-people-img"> 
+                            <p class="assign-notify__assign-people-name">Jhon Dav</p>   
+                        </div>
+                        <div class="assign-notify__edit-delete">
+                            <a href="" class="assign-notify__edit">                                
+                            </a>
+                            <a href="" class="assign-notify__delete">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="assign-notify__notify">
+                    <h4 class="assign-notify__title">Notify to(CC)</h4>
+                    <div class="assign-notify__assignes">
+                        <div class="assign-notify__assign-people">
+                            <img src="../../../assets/icons/logged-person.png" alt="" class="assign-notify__assign-people-img"> 
+                            <p class="assign-notify__assign-people-name">Jhon Dav</p>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="description">
+                <h4 class="description__title">Description</h4>
+                <blockquote class="description__desc">
+                    R/H Post Machine Motor Trip , Fuse break down R/H PostR/H Post Machine Motor Trip ,Fuse break down R/H Post Machine Motor Trip , Fuse R/H Post Machine Fuse R/H Post Machine Fuse R/H Post Motor.
+                </blockquote>
+            </div>
+            <div class="attachments">
+                <h4 class="attachments__title">Attachments</h4>
+            </div>
+        </div>
+    </div>
+    <div class="custom-modal__right">
+        <div class="custom-modal__right-header">
+            <div class="form-group add-to-card">
+                <label class="add-to-card__title" for="">ADD TO CARD</label>
+                <input type="text" class="form-control" placeholder="Equipment type">
+                <input type="text" class="form-control" placeholder="Equipment Name">
+            </div>
+        </div>
+        <div class="custom-modal__right-content">
+            <div class="comment">
+                <h4 class="comment__title">Comment</h4>
+                <div class="comment__input">
+                    <img src="../../../assets/icons/logged-person.png" alt="" class="comment__people-img"> 
+                    <input type="text" class="form-control maxw" placeholder="Write a comment...">
+                </div>
+                <div class="comment__history">
+                    <h4 class="comment__title">History</h4>
+                    <ul class="comment__histories">
+                        <li class="comment__history-item">
+                            <img src="../../../assets/icons/logged-person.png" alt="" class="comment__people-img">
+                            <div class="comment__history-item-text">
+                                <span class="comment__history-item-name">Hwang Lee</span>
+                                <span class="comment__history-item-status">commented</span>
+                                <p class="comment__history-item-time">5 August, 2020 11.57 AM</p>
+                            </div>                            
+                        </li>
+                        <li class="comment__history-item">
+                            <img src="../../../assets/icons/logged-person.png" alt="" class="comment__people-img">
+                            <div class="comment__history-item-text">
+                                <span class="comment__history-item-name">Hwang Lee</span>
+                                <span class="comment__history-item-status">attached image_1 to this request card</span>
+                                <p class="comment__history-item-time">5 August, 2020 11.57 AM</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

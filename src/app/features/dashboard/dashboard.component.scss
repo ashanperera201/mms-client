@@ -2,106 +2,107 @@
 @import "../../../styles/utils/responsive";
 
 .layout-content {
-    mat-sidenav-container {
-        width: 100vw;
+  mat-sidenav-container {
+    width: 100vw;
 
-        mat-sidenav {
-            width: 25.6rem;
+    mat-sidenav {
+      width: 25.6rem;
 
-            mat-nav-list {
-                .mat-list-item {
-                    @include side-nav-icons();
-                }
-
-                .icon {
-                    margin-left: 1rem;
-                }
-            }
-
-            .header-section {
-                margin-top: 2rem;
-
-                &:not(:last-child) {
-                    img {
-                        margin-right: 1rem;
-                    }
-                }
-
-                h1 {
-                    color: #000000;
-                    font-size: 2.3rem;
-                    font-weight: bold;
-                }
-            }
-
-            .recuest-content {
-                height: 4.5rem;
-                background: #c6e2ff 0% 0% no-repeat padding-box;
-                border-radius: 1.2rem;
-                margin: 0 1.5rem;
-                opacity: 1;
-                margin-top: 2rem;
-                cursor: pointer;
-
-                > mat-icon {
-                    margin-left: 2rem;
-                    margin-right: 1rem;
-                    color: #4d70ff;
-                    font-weight: 500;
-                }
-
-                > h3 {
-                    color: #5b8aff;
-                    font-size: 1.5rem;
-                    font-weight: 400;
-                }
-            }
+      mat-nav-list {
+        .mat-list-item {
+          @include side-nav-icons();
         }
 
-        mat-sidenav-content {
-            mat-toolbar {
-                background-color: #ffff !important;
-                .toolbar-icon-spacer {
-                    flex: 1 auto;
-                }
-                .user-actions {
-                    color: #a1a1a1;
-                    h4 {
-                        font-size: 1.6rem;
-                    }
-                    .profile-pic {
-                        cursor: pointer;
-                        width: 4rem;
-                        height: 4rem;
-                        border-radius: 50%;
-                    }
-                }
-            }
-
-            .dashboard-content {
-                height: auto;
-                background: #f1f1f1 0% 0% no-repeat padding-box;
-                opacity: 1;
-            }
+        .icon {
+          margin-left: 1rem;
         }
+      }
+
+      .header-section {
+        margin-top: 2rem;
+
+        &:not(:last-child) {
+          img {
+            margin-right: 1rem;
+          }
+        }
+
+        h1 {
+          color: #000000;
+          font-size: 2.3rem;
+          font-weight: bold;
+        }
+      }
+
+      .recuest-content {
+        height: 4.5rem;
+        background: #c6e2ff 0% 0% no-repeat padding-box;
+        border-radius: 1.2rem;
+        margin: 0 1.5rem;
+        opacity: 1;
+        margin-top: 2rem;
+        cursor: pointer;
+
+        > mat-icon {
+          margin-left: 2rem;
+          margin-right: 1rem;
+          color: #4d70ff;
+          font-weight: 500;
+        }
+
+        > h3 {
+          color: #5b8aff;
+          font-size: 1.5rem;
+          font-weight: 400;
+        }
+      }
     }
+
+    mat-sidenav-content {
+      mat-toolbar {
+        background-color: #ffff !important;
+        .toolbar-icon-spacer {
+          flex: 1 auto;
+        }
+        .user-actions {
+          color: #a1a1a1;
+          h4 {
+            font-size: 1.6rem;
+          }
+          .profile-pic {
+            cursor: pointer;
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+          }
+        }
+      }
+
+      .dashboard-content {
+        height: 100%;
+        background: #f1f1f1 0% 0% no-repeat padding-box;
+        opacity: 1;
+        padding: 20px;
+      }
+    }
+  }
 }
 
 ::ng-deep .mat-form-field-wrapper {
-    padding-bottom: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 ::ng-deep .mat-form-field-flex > .mat-form-field-infix {
-    padding: 0.4em 0px !important;
-    font-size: 1.5rem;
+  padding: 0.4em 0px !important;
+  font-size: 1.5rem;
 }
 ::ng-deep .mat-form-field-label-wrapper {
-    top: -1.5em;
+  top: -1.5em;
 }
 
 ::ng-deep
-    .mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float
-    .mat-form-field-label {
-    transform: translateY(-1.1em) scale(0.75);
-    width: 133.33333%;
+  .mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float
+  .mat-form-field-label {
+  transform: translateY(-1.1em) scale(0.75);
+  width: 133.33333%;
 }
