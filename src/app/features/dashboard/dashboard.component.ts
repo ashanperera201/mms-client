@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, HostListener } from '@angular/core';
 import { MatDrawerMode, MatSidenav } from '@angular/material/sidenav';
 
 @Component({
@@ -20,5 +20,24 @@ export class DashboardComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    if (event.target.innerWidth < 1200) {
+      this.sideNavOverMode();
+    } else {
+      this.sideNavSideMode();
+    }
+  }
+
+  sideNavOverMode = () => {
+    this.sidenav.close();
+    this.mode = "over";
+  }
+
+  sideNavSideMode = () => {
+    this.sidenav.open();
+    this.mode = "side";
   }
 }

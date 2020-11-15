@@ -1,5 +1,6 @@
 @import "../../../../styles/themes/colour-variable";
 @import "../../../../styles/utils/responsive";
+@import "../../../../styles/utils/mixins";
 
 .auth-container {
     left: 0px;
@@ -32,10 +33,9 @@
             width: 100%;
             margin-bottom: 30px;
 
-            img{
+            img {
                 max-width: 30px;
             }
-
 
             > span {
                 font-size: 4rem;
@@ -76,11 +76,14 @@
                 height: 8rem;
                 margin: 30px 0;
 
-                > img {
-                    cursor: pointer;
+                .icon-qr-code-1 {
+                    font-size: 6.5rem !important;
+                    text-align: center !important;
+                    color: $pure-white !important;
+                    cursor: pointer !important;
                 }
 
-                mat-label{
+                mat-label {
                     font-weight: 300;
                 }
             }
@@ -96,70 +99,44 @@
     }
 }
 
-
-.auth-group{
+.auth-group {
     width: 100%;
     position: relative;
-    &__input{
-        width: 100%;
-        color: #ffffff;
-        background: transparent;
-        font-weight: 300;
-        border-radius: 11px;
-        border: 1px solid #ffffff;
-        height: 46px;
-        font-size: 16px;
-        max-height: 46px;
-        padding: 6px 14px;
-        padding-left: 46px;
-        display: inline-block;
-        box-sizing: border-box;
-        margin-bottom: 20px;
-
-        &::placeholder{
-            color: #ffffff;
-            font-weight: 300;
-        }
-
-        &:focus {
-            // border: none;
-            outline: unset;
-            box-shadow: unset;
-          }
-        
+    &__input {
+       @include input-wrapper();
     }
 
-    &__input+&__label{
+    &__input + &__label {
         position: absolute;
         top: 0;
         left: 0;
         transform: translateY(50%);
-        &::before{
-            font-family: 'icomoon';
+        &::before {
+            font-family: "icomoon";
             position: absolute;
             left: 20px;
-            top:0;
+            top: 0;
             transform: translateY(65%);
             font-size: 16px;
-            color: #ffffff;
+            color: $pure-white;
             pointer-events: none;
         }
     }
 
-    &__input--username+&__label{
-        &::before{
-        content: '\e927';
+    &__input--username + &__label {
+        &::before {
+            content: "\e927";
         }
     }
-    &__input--password+&__label{
-        &::before{
-        content: '\e929';
+    &__input--password + &__label {
+        &::before {
+            content: "\e929";
         }
     }
 }
 
-.btn{
-    &--login{
+.btn {
+    &--login {
         width: 100%;
         color: #ffffff;
         border: 1px solid #ffffff;
@@ -168,7 +145,7 @@
         font-size: 16px;
         font-weight: 300;
         background: rgb(125 125 125 / 90%);
-    backdrop-filter: blur(9px);
-    -webkit-backdrop-filter: blur(9px);
+        backdrop-filter: blur(9px);
+        -webkit-backdrop-filter: blur(9px);
     }
 }

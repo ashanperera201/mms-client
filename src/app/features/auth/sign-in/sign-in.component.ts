@@ -20,7 +20,7 @@ export class SignInComponent implements OnInit {
   proceedLogin = () => {
     if (this.userName && this.password) {
       this.authenticationService.authenticate(this.userName, this.password);
-      this.router.navigate(['/dashboard']);
+      this.router.navigate(['dashboard']);
     } else {
       console.log(`${this.userName ? '' : 'Please enter user name'} ${this.password ? '' : 'please enter password'} `)
     }

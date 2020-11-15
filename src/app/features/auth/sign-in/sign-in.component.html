@@ -1,39 +1,28 @@
 <div class="auth-container flex flex-row flex-justify-center flex-align-center">
     <div class="auth-container__login">
-        <div class="flex flex-justify-center flex-align-center flex-justify-center auth-container__login--header-section">
+        <div
+            class="flex flex-justify-center flex-align-center flex-justify-center auth-container__login--header-section">
             <img src="../../../../assets/icons/Group 350.svg" alt="">
             <span>Azbil MMS</span>
         </div>
         <form class="flex flex-column flex-align-center auth-container__login--body-section" autocomplete="off">
-            <!-- <mat-form-field appearance="outline">
-                <mat-label>User Name</mat-label>
-                <input matInput placeholder="User Name" [(ngModel)]="userName" name="userName">
-                <img matSuffix src="../../../../assets/icons/male-user-shadow.svg" alt="male-user-shadow">
-            </mat-form-field>
-
-            <mat-form-field appearance="outline">
-                <mat-label>Password</mat-label>
-                <input type="password" matInput placeholder="Password" [(ngModel)]="password" name="password">
-                <img matSuffix src="../../../../assets/icons/padlock.svg" alt="male-user-shadow">
-            </mat-form-field> -->
-
             <div class="auth-group">
-                <input type="text" class="auth-group__input auth-group__input--username" placeholder="User Name">
+                <input type="text" class="auth-group__input auth-group__input--username" placeholder="User Name"
+                    id="userName" name="userName" [(ngModel)]="userName">
                 <label class="auth-group__label"></label>
             </div>
-
             <div class="auth-group">
-                <input type="password" class="auth-group__input auth-group__input--password" placeholder="Password">
+                <input type="password" class="auth-group__input auth-group__input--password" placeholder="Password"
+                    id="password" name="password" [(ngModel)]="password">
                 <label class="auth-group__label"></label>
             </div>
-
             <div class="flex flex-justify-space-between flex-align-center remember-me">
                 <mat-label>Remember me</mat-label>
                 <mat-slide-toggle color="primary"></mat-slide-toggle>
             </div>
             <button mat-raised-button (click)="proceedLogin()" class="btn--login">Login</button>
             <div class="flex flex-column flex-justify-space-around qr-code">
-                <img src="../../../../assets/icons/qr-code.svg" alt="qr-code">
+                <span class="icon-qr-code-1"></span>
                 <mat-label>Scan QR Code</mat-label>
             </div>
             <a>Forgot password</a>
