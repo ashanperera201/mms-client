@@ -1,1 +1,12 @@
-<p>qr-code works!</p>
+<div class="flex">
+    <div class="w-100 flex flex-justify-space-between flex-align-center">
+        <h3>Scan your QR Code</h3>
+        <button mat-icon-button (click)="closeDialog()">
+            <mat-icon>close</mat-icon>
+        </button>
+    </div>
+</div>
+<div class="flex">
+    <qr-scanner #qrCodeScanner [debug]="true" [canvasWidth]="1080" [canvasHeight]="720" [stopAfterScan]="true" [updateTime]="500" (capturedQr)="afterCapturing($event)">
+    </qr-scanner>
+</div>

@@ -1,5 +1,8 @@
 import { Component, OnInit, ViewChild, HostListener } from '@angular/core';
 import { MatDrawerMode, MatSidenav } from '@angular/material/sidenav';
+import { Router } from '@angular/router';
+import { DashboardService } from '../../core/services/index';;
+import { IMenuItems } from '../../core/interfaces/index';
 
 @Component({
   selector: 'app-dashboard',
@@ -15,11 +18,18 @@ export class DashboardComponent implements OnInit {
   sideNavState: boolean = true;
   isNavigationChanged: boolean = false;
   linkText: boolean = false;
+  menuItems: IMenuItems[];
 
-  constructor() {
+  constructor(private dashboardService: DashboardService,
+    private router: Router) {
   }
 
   ngOnInit() {
+    this.loadMenuItems();
+  }
+
+  loadMenuItems = () => {
+    this.menuItems = this.dashboardService.getDashboardMenuItems();
   }
 
   @HostListener('window:resize', ['$event'])
@@ -39,5 +49,9 @@ export class DashboardComponent implements OnInit {
   sideNavSideMode = () => {
     this.sidenav.open();
     this.mode = "side";
+  }
+
+  routeToRequestBoard = () => {
+    this.router.navigate(['/dashboard/job-request'])
   }
 }

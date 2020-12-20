@@ -1,0 +1,27 @@
+@import "../../../../../styles/themes/colour-variable";
+@import "../../../../../styles/utils/responsive";
+
+mat-toolbar {
+    background-color: $pure-white !important;
+
+    mat-form-field {
+        @include respond(phone) {
+            display: none;
+        }
+    }
+    .toolbar-icon-spacer {
+        flex: 1 auto;
+    }
+    .user-actions {
+        color: $toolbar-font-colour;
+        h4 {
+            font-size: 1.6rem;
+        }
+        .profile-pic {
+            cursor: pointer;
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+        }
+    }
+}

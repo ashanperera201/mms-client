@@ -2,9 +2,15 @@
 
 fusioncharts {
     * > svg {
-        box-shadow: 0.6rem 0.6rem 1rem $box-shadow !important;
-        border-radius: 00.7rem !important;
-        opacity: 1 !important;
+        .raphael-group-wPberoTk{
+            display: none;
+        }
+
+        g[class^="raphael-group-"]{
+            text[fill~="#000000"],text[font-size~=".9rem"]{
+                display: none;
+            }
+        }
     }
 
     @include respond(big-desktop) {

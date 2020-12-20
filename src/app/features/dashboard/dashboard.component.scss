@@ -1,22 +1,14 @@
-@import "../../../styles/utils/mixins";
+@import "../../../styles/utils/mixins/common-mixins";
 @import "../../../styles/utils/responsive";
+@import "../../../styles/themes/colour-variable";
 
 .layout-content {
   mat-sidenav-container {
     width: 100vw;
+    background: $dashboard-content-background 0% 0% no-repeat padding-box;
 
     mat-sidenav {
       width: 25.6rem;
-
-      mat-nav-list {
-        .mat-list-item {
-          @include side-nav-icons();
-        }
-
-        .icon {
-          margin-left: 1rem;
-        }
-      }
 
       .header-section {
         margin-top: 2rem;
@@ -28,7 +20,7 @@
         }
 
         h1 {
-          color: #000000;
+          color: $font-common-pure-black;
           font-size: 2.3rem;
           font-weight: bold;
         }
@@ -36,7 +28,7 @@
 
       .recuest-content {
         height: 4.5rem;
-        background: #c6e2ff 0% 0% no-repeat padding-box;
+        background: $light-blue 0% 0% no-repeat padding-box;
         border-radius: 1.2rem;
         margin: 0 1.5rem;
         opacity: 1;
@@ -46,12 +38,12 @@
         > mat-icon {
           margin-left: 2rem;
           margin-right: 1rem;
-          color: #4d70ff;
+          color: $font-light-blue;
           font-weight: 500;
         }
 
         > h3 {
-          color: #5b8aff;
+          color: $font-bright-blue;
           font-size: 1.5rem;
           font-weight: 400;
         }
@@ -59,30 +51,17 @@
     }
 
     mat-sidenav-content {
-      mat-toolbar {
-        background-color: #ffff !important;
-        .toolbar-icon-spacer {
-          flex: 1 auto;
-        }
-        .user-actions {
-          color: #a1a1a1;
-          h4 {
-            font-size: 1.6rem;
-          }
-          .profile-pic {
-            cursor: pointer;
-            width: 4rem;
-            height: 4rem;
-            border-radius: 50%;
-          }
-        }
-      }
-
       .dashboard-content {
-        height: 100%;
-        background: #f1f1f1 0% 0% no-repeat padding-box;
         opacity: 1;
         padding: 20px;
+        max-height: calc(100% - 105px);
+        overflow-y: auto;
+        height: 100%;
+        
+        @include respond(phone) {
+          max-height: calc(100% - 76px);
+          padding: 10px;
+        }
       }
     }
   }

@@ -1,0 +1,58 @@
+@import "../../../../../styles/utils/responsive";
+
+.border {
+    display: inline-block;
+    margin-top: 2rem;
+    &-content {
+        position: relative;
+        border: 6px solid #8083fe;
+        background-color: white;
+        opacity: 1;
+
+        &::before {
+            content: "";
+            z-index: 0;
+            position: absolute;
+            top: -16px;
+            bottom: -16px;
+            left: 16px;
+            right: 18px;
+            background-color: white;
+        }
+
+        &::after {
+            content: "";
+            z-index: 0;
+            position: absolute;
+            top: 20px;
+            bottom: 20px;
+            left: -16px;
+            right: -16px;
+            background-color: white;
+        }
+    }
+}
+
+.content {
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    width: 32.5rem;
+    height: 30rem;
+    @include respond(phone) {
+        width: 25rem;
+        height: 25rem;
+    }
+    background: #bcbcbc 0% 0% no-repeat padding-box;
+    opacity: 0.73;
+}
+
+.horizontal-line {
+    position: absolute;
+    background-color: red;
+    color: red;
+    width: -webkit-fill-available;
+    height: 0.8%;
+    top: 75%;
+    border: none;
+}

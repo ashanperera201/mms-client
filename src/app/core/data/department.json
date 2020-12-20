@@ -1,0 +1,21 @@
+{
+    "statusCode": 200,
+    "message": "Ok",
+    "data": [
+        {
+            "id": "001",
+            "name": "CF",
+            "status": 1
+        },
+        {
+            "id": "002",
+            "name": "DB",
+            "status": 1
+        },
+        {
+            "id": "003",
+            "name": "PP",
+            "status": 1
+        }
+    ]
+}

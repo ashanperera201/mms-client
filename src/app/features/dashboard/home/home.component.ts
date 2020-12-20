@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as FusionCharts from 'fusioncharts';
-import * as lineChart from '../../../core/data/line-chart.json';
-import * as pieChart from '../../../core/data/pie-chart.json';
-import * as barChart from '../../../core/data/bar-chart.json';
+import { IJobRequest } from '../../../core/interfaces/index';
+import { DashboardService, JobRequestService } from '../../../core/services/index';
 
 @Component({
   selector: 'app-home',
@@ -11,26 +9,27 @@ import * as barChart from '../../../core/data/bar-chart.json';
 })
 export class HomeComponent implements OnInit {
 
-  dataSource: any = {};
-  pieChartDataSource: any = {};
-  barChartDataSource: any = {};
-  multiChartDataSource: any = {};
+  chartData: any[] = [];
+  jobRequestData: IJobRequest[] = [];
+  keys = Object.keys;
 
-  constructor() {
-    this.pieChartDataSource = pieChart['default'];
-    this.barChartDataSource = barChart['default'];
-    this.multiChartDataSource = barChart['default'];
-    this.fetchData();
+  constructor(private dashboardService: DashboardService, private jobRequestService: JobRequestService) {
   }
 
   ngOnInit() {
+    this.loadChartData();
+    this.loadJobRequestData();
   }
 
-  fetchData() {
-    const fusionDataStore = new FusionCharts.DataStore();
-    const fusionTable = fusionDataStore.createDataTable(lineChart.data, lineChart.schema);
-    this.dataSource = lineChart.chartInfo;
-    this.dataSource.data = {};
-    this.dataSource.data = fusionTable;
+  loadJobRequestData = () => {
+    this.jobRequestService.getJobRequestData().subscribe((jobRequestResult: IJobRequest[]) => {
+      this.jobRequestData = jobRequestResult;
+    }, error => {
+      console.log(error);
+    })
+  }
+
+  loadChartData = () => {
+    this.chartData = this.dashboardService.getMainWidgetData();
   }
 }

@@ -3,29 +3,33 @@
         <div
             class="flex flex-justify-center flex-align-center flex-justify-center auth-container__login--header-section">
             <img src="../../../../assets/icons/Group 350.svg" alt="">
-            <span>Azbil MMS</span>
+            <span>{{'loginModule.mainHeader'|transloco}}</span>
         </div>
-        <form class="flex flex-column flex-align-center auth-container__login--body-section" autocomplete="off">
+        <form class="flex flex-column flex-align-center auth-container__login--body-section" autocomplete="off"
+            [formGroup]="loginFormGroup">
             <div class="auth-group">
-                <input type="text" class="auth-group__input auth-group__input--username" placeholder="User Name"
-                    id="userName" name="userName" [(ngModel)]="userName">
+                <input type="text" class="auth-group__input auth-group__input--username"
+                    [placeholder]="'loginModule.formAttributes.userName'|transloco" id="userName" name="userName"
+                    formControlName="userName">
                 <label class="auth-group__label"></label>
             </div>
             <div class="auth-group">
-                <input type="password" class="auth-group__input auth-group__input--password" placeholder="Password"
-                    id="password" name="password" [(ngModel)]="password">
+                <input type="password" class="auth-group__input auth-group__input--password"
+                    [placeholder]="'loginModule.formAttributes.password'|transloco" id="password" name="password"
+                    formControlName="password">
                 <label class="auth-group__label"></label>
             </div>
             <div class="flex flex-justify-space-between flex-align-center remember-me">
-                <mat-label>Remember me</mat-label>
-                <mat-slide-toggle color="primary"></mat-slide-toggle>
+                <mat-label>{{'loginModule.formAttributes.rememberMe'|transloco}}</mat-label>
+                <mat-slide-toggle color="primary" formControlName="isRememberMe"></mat-slide-toggle>
             </div>
-            <button mat-raised-button (click)="proceedLogin()" class="btn--login">Login</button>
+            <button mat-raised-button (click)="proceedLogin()"
+                class="btn--login">{{'loginModule.formAttributes.loginButton'|transloco}}</button>
             <div class="flex flex-column flex-justify-space-around qr-code">
-                <span class="icon-qr-code-1"></span>
-                <mat-label>Scan QR Code</mat-label>
+                <span class="icon-qr-code" (click)="proceedQrCode()"></span>
+                <mat-label>{{'loginModule.formAttributes.qrCode'|transloco}}</mat-label>
             </div>
-            <a>Forgot password</a>
+            <a>{{'loginModule.formAttributes.forgotPassword'|transloco}}</a>
         </form>
     </div>
 </div>

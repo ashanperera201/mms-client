@@ -1,0 +1,13 @@
+<ul class="job-types">
+    <li class="job-types__item" *ngFor="let container of iconContainers">
+        <a class="job-types__link {{container?.isSelected ? 'active':''}}">
+            <div class="job-types__item-icon" (click)="containerSelection(container)">
+                <span [class]="container?.iconClass"></span>
+            </div>
+            <h4 class="job-types__item-title">{{container?.jobHeading}}</h4>
+            <p class="job-types__item-content">
+                {{container?.jobDescription}}
+            </p>
+        </a>
+    </li>
+</ul>

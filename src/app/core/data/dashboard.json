@@ -1,0 +1,231 @@
+[
+    {
+        "id": 1,
+        "uniqueId": "1266c919-302a-4efe-bc22-f498f5518d5b",
+        "chartType": "doughnut2d",
+        "width": "100%",
+        "height": "100%",
+        "dataFormat": "json",
+        "dataSource": {
+            "chart": {
+                "caption": "JR by Departments",
+                "smartLineThickness": "2",
+                "pieRadius": "100",
+                "bgColor": "#ffffff",
+                "startingAngle": "310",
+                "showLegend": "1",
+                "centerLabelBold": "1",
+                "showTooltip": "0",
+                "showPercentValues": "1",
+                "legendShadow": "30",
+                "labelFontColor": "#ffffff",
+                "decimals": "0",
+                "theme": "fusion",
+                "valuePosition": "inside",
+                "minAngleForValue": "75",
+                "enablesmartLabel": "0",
+                "alignCaptionWithCanvas": "1",
+                "captionAlignment": "left"
+            },
+            "data": [
+                {
+                    "label": "Food",
+                    "value": "28504"
+                },
+                {
+                    "label": "Apparels",
+                    "value": "14633"
+                },
+                {
+                    "label": "Electronics",
+                    "value": "10507"
+                },
+                {
+                    "label": "Household",
+                    "value": "4910"
+                }
+            ]
+        }
+    },
+    {
+        "id": 2,
+        "uniqueId": "1266c919-302a-4efe-bc22-f498f5518d5b",
+        "chartType": "Column2d",
+        "width": "100%",
+        "height": "100%",
+        "dataFormat": "json",
+        "dataSource": {
+            "chart": {
+                "caption": "Countries With Most Oil Reserves [2017-18]",
+                "subCaption": "In MMbbl = One Million barrels",
+                "xAxisName": "Country",
+                "yAxisName": "Reserves (MMbbl)",
+                "numberSuffix": "K",
+                "theme": "fusion",
+                "captionAlignment": "left"
+            },
+            "data": [
+                {
+                    "label": "Venezuela",
+                    "value": "290"
+                },
+                {
+                    "label": "Saudi",
+                    "value": "260"
+                },
+                {
+                    "label": "Canada",
+                    "value": "180"
+                },
+                {
+                    "label": "Iran",
+                    "value": "140"
+                },
+                {
+                    "label": "Russia",
+                    "value": "115"
+                },
+                {
+                    "label": "UAE",
+                    "value": "100"
+                },
+                {
+                    "label": "US",
+                    "value": "30"
+                },
+                {
+                    "label": "China",
+                    "value": "30"
+                }
+            ]
+        }
+    },
+    {
+        "id": 3,
+        "uniqueId": "1266c919-302a-4efe-bc22-f498f5518d5b",
+        "chartType": "Column2d",
+        "width": "100%",
+        "height": "100%",
+        "dataFormat": "json",
+        "dataSource": {
+            "chart": {
+                "caption": "Countries With Most Oil Reserves [2017-18]",
+                "subCaption": "In MMbbl = One Million barrels",
+                "xAxisName": "Country",
+                "yAxisName": "Reserves (MMbbl)",
+                "numberSuffix": "K",
+                "theme": "fusion",
+                "captionAlignment": "left"
+            },
+            "data": [
+                {
+                    "label": "Venezuela",
+                    "value": "290"
+                },
+                {
+                    "label": "Saudi",
+                    "value": "260"
+                },
+                {
+                    "label": "Canada",
+                    "value": "180"
+                },
+                {
+                    "label": "Iran",
+                    "value": "140"
+                },
+                {
+                    "label": "Russia",
+                    "value": "115"
+                },
+                {
+                    "label": "UAE",
+                    "value": "100"
+                },
+                {
+                    "label": "US",
+                    "value": "30"
+                },
+                {
+                    "label": "China",
+                    "value": "30"
+                }
+            ]
+        }
+    },
+    {
+        "id": 4,
+        "uniqueId": "1266c919-302a-4efe-bc22-f498f5518d5b",
+        "chartType": "mscolumn2d",
+        "width": "100%",
+        "height": "100%",
+        "dataFormat": "json",
+        "dataSource": {
+            "chart": {
+                "theme": "fusion",
+                "caption": "Comparison of Quarterly Revenue",
+                "xAxisname": "Quarter",
+                "yAxisName": "Revenues (In USD)",
+                "plotFillAlpha": "80",
+                "divLineIsDashed": "1",
+                "divLineDashLen": "1",
+                "divLineGapLen": "1",
+                "captionAlignment": "left"
+            },
+            "categories": [
+                {
+                    "category": [
+                        {
+                            "label": "Q1"
+                        },
+                        {
+                            "label": "Q2"
+                        },
+                        {
+                            "label": "Q3"
+                        },
+                        {
+                            "label": "Q4"
+                        }
+                    ]
+                }
+            ],
+            "dataset": [
+                {
+                    "seriesname": "Previous Year",
+                    "data": [
+                        {
+                            "value": "12000"
+                        },
+                        {
+                            "value": "10500"
+                        },
+                        {
+                            "value": "23500"
+                        },
+                        {
+                            "value": "16000"
+                        }
+                    ]
+                },
+                {
+                    "seriesname": "Current Year",
+                    "data": [
+                        {
+                            "value": "24400"
+                        },
+                        {
+                            "value": "29800"
+                        },
+                        {
+                            "value": "20800"
+                        },
+                        {
+                            "value": "26800"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+]

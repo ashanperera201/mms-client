@@ -1,0 +1,44 @@
+[
+    {
+        "parentId": 1,
+        "menuName": "Dashboard",
+        "iconClassName": "icon-dashboard",
+        "route": "/dashboard/home",
+        "menuItems": []
+    },
+    {
+        "parentId": 2,
+        "menuName": "Boards",
+        "iconClassName": "icon-document",
+        "route": "",
+        "menuItems": []
+    },
+    {
+        "parentId": 3,
+        "menuName": "Perfomance",
+        "iconClassName": "icon-speed",
+        "route": "",
+        "menuItems": []
+    },
+    {
+        "parentId": 4,
+        "menuName": "Calender",
+        "iconClassName": "icon-calender",
+        "route": "",
+        "menuItems": []
+    },
+    {
+        "parentId": 5,
+        "menuName": "Reports",
+        "iconClassName": "icon-search",
+        "route": "",
+        "menuItems": []
+    },
+    {
+        "parentId": 6,
+        "menuName": "User Profile",
+        "iconClassName": "icon-team",
+        "route": "",
+        "menuItems": []
+    }
+]

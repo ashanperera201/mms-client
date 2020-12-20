@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { AuthenticationService } from '../../../core/services-gateway/authentication.service';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
+import { ToastrService } from 'ngx-toastr';
+import { AuthenticationService } from '../../../core/services/index';
+import { QrCodeComponent } from '../qr-code/qr-code.component';
 
 @Component({
   selector: 'app-sign-in',
@@ -9,20 +13,56 @@ import { AuthenticationService } from '../../../core/services-gateway/authentica
 })
 export class SignInComponent implements OnInit {
 
-  userName: string;
-  password: string;
+  loginFormGroup: FormGroup;
 
-  constructor(private router: Router, private authenticationService: AuthenticationService) { }
+  constructor(
+    private router: Router,
+    private authenticationService: AuthenticationService,
+    private toastrService: ToastrService,
+    private matDialog: MatDialog) { }
 
   ngOnInit(): void {
+    this.initializeFormGroup();
+    if (this.authenticationService.isLoggedIn()) {
+      this.router.navigate(['dashboard']);
+    } else {
+      this.router.navigate(['auth']);
+    }
+  }
+
+  initializeFormGroup = () => {
+    this.loginFormGroup = new FormGroup({
+      userName: new FormControl(null, Validators.required),
+      password: new FormControl(null, Validators.required),
+      isRememberMe: new FormControl(false)
+    });
   }
 
   proceedLogin = () => {
-    if (this.userName && this.password) {
-      this.authenticationService.authenticate(this.userName, this.password);
-      this.router.navigate(['dashboard']);
+    const userName: string = this.loginFormGroup.get('userName').value;
+    const password: string = this.loginFormGroup.get('password').value;
+
+    if (this.loginFormGroup.valid) {
+      this.authenticationService.authenticate(this.loginFormGroup.value).subscribe(tokenResult => {
+        if (tokenResult) {
+          this.router.navigate(['dashboard']);
+        }
+      });
     } else {
-      console.log(`${this.userName ? '' : 'Please enter user name'} ${this.password ? '' : 'please enter password'} `)
+      if (userName || password) {
+        `${userName ? '' : this.toastrService.error('Please enter user name', "Error")} 
+         ${password ? '' : this.toastrService.error('please enter password', "Error")}`;
+      } else {
+        this.toastrService.error('Please enter user name and password', "Error")
+      }
     }
   }
+
+  proceedQrCode = () => {
+    const qrCodeDialogRef = this.matDialog.open(QrCodeComponent, {
+      width: '60rem',
+      height: '55rem'
+    });
+  }
+
 }

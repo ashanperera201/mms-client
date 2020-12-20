@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "iconClass": "icon-layer",
+        "templateCode": "EE-JOBREQUEST",
+        "jobHeading": "EE Job Request",
+        "jobDescription": "Lorem ipsum dolor sit amet, soluta detraxit nec ne. Vim admodum lobortis eu,",
+        "isSelected": false
+    },
+    {
+        "id": 2,
+        "iconClass": "icon-Engineering",
+        "templateCode": "MF-JOBREQUEST",
+        "jobHeading": "M&F Job Request",
+        "jobDescription": "Lorem ipsum dolor sit amet, soluta detraxit nec ne. Vim admodum lobortis eu,",
+        "isSelected": false
+    },
+    {
+        "id": 3,
+        "iconClass": "icon-analytics",
+        "templateCode": "PROJECT-JOBREQUEST",
+        "jobHeading": "Project Job Request",
+        "jobDescription": "Lorem ipsum dolor sit amet, soluta detraxit nec ne. Vim admodum lobortis eu,",
+        "isSelected": false
+    }
+]

@@ -1,0 +1,10 @@
+@import "../../../../../styles/utils/mixins/common-mixins";
+
+.menu-items {
+    .mat-list-item {
+        @include side-nav-icons();
+    }
+    .icon {
+        margin-left: 1rem;
+    }
+}

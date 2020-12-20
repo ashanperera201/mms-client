@@ -1,6 +1,6 @@
 @import "../../../../styles/themes/colour-variable";
 @import "../../../../styles/utils/responsive";
-@import "../../../../styles/utils/mixins";
+@import "../../../../styles/utils/mixins/common-mixins";
 
 .auth-container {
     left: 0px;
@@ -19,14 +19,14 @@
         height: auto;
         position: relative;
         background: rgb(255 255 255 / 13%);
-        backdrop-filter: blur(0.8px) brightness(78%);
-        -webkit-backdrop-filter: blur(0.8px) brightness(78%);
+        backdrop-filter: blur(1px) brightness(78%);
+        -webkit-backdrop-filter: blur(1px) brightness(78%);
         border-radius: 2.5rem;
         overflow: hidden;
         @include respond(tab-land) {
             width: 100%;
-            margin: 0 30px;
-            padding: 8vmin 8vmin;
+            margin: 0 10px;
+            padding: 8vmin 10vmin;
         }
 
         &--header-section {
@@ -76,7 +76,7 @@
                 height: 8rem;
                 margin: 30px 0;
 
-                .icon-qr-code-1 {
+                .icon-qr-code {
                     font-size: 6.5rem !important;
                     text-align: center !important;
                     color: $pure-white !important;
@@ -104,6 +104,9 @@
     position: relative;
     &__input {
        @include input-wrapper();
+       &:-webkit-autofill {
+            -webkit-text-fill-color: $pure-white !important;
+        }
     }
 
     &__input + &__label {
@@ -125,12 +128,12 @@
 
     &__input--username + &__label {
         &::before {
-            content: "\e927";
+            content: "\e90b";
         }
     }
     &__input--password + &__label {
         &::before {
-            content: "\e929";
+            content: "\e90e";
         }
     }
 }
@@ -138,8 +141,8 @@
 .btn {
     &--login {
         width: 100%;
-        color: #ffffff;
-        border: 1px solid #ffffff;
+        color: $pure-white;
+        border: 1px solid $pure-white;
         border-radius: 11px;
         padding: 4px;
         font-size: 16px;

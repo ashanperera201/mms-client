@@ -1,0 +1,21 @@
+{
+    "loginModule": {
+        "mainHeader": "Azbil MMS",
+        "formAttributes": {
+            "userName": "User Name",
+            "password": "Password",
+            "rememberMe": "Remember me",
+            "loginButton": "Login",
+            "qrCode": "Scan QR Code",
+            "forgotPassword": "Forgot password"
+        }
+    },
+    "dashboardModule": {
+        "sidenavHeader": "Azbil MMS",
+        "newRequestButtonLable": "New Request",
+        "dashboardMainHeader": "Overrall Data",
+        "requestHeader": "Job Request Board",
+        "searchPlaceHolder": "Search job number, names or help",
+        "searchLable": "Search job number, names or help"
+    }
+}

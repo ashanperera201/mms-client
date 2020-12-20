@@ -4,7 +4,9 @@ import { CommonModule } from '@angular/common';
 import { RequestComponent } from './request.component';
 
 const routes: Routes = [
-    { path: '', component: RequestComponent }
+    {
+        path: '', component: RequestComponent
+    }
 ];
 
 @NgModule({

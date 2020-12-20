@@ -2,91 +2,19 @@
     <mat-sidenav-container>
         <mat-sidenav #sidenav class="mat-elevation-z3" [mode]="mode" [opened]="opened" [autoFocus]="true">
             <div class="header-section flex flex-row flex-justify-center flex-align-center">
-                <img src="../../../assets/icons/mms-side-header.svg" alt="Layer_x0020_1">
-                <h1>Azbil MMS</h1>
+                <img src="../../../assets/icons/mms-side-header.svg" alt="mms-side-header">
+                <h1>{{'dashboardModule.sidenavHeader'|transloco}}</h1>
             </div>
-            <div class="recuest-content flex flex-row flex-align-center">
+            <div class="recuest-content flex flex-row flex-align-center" (click)="routeToRequestBoard()">
                 <mat-icon>add</mat-icon>
-                <h3 class="ml-3">New Request</h3>
+                <h3 class="ml-2">{{'dashboardModule.newRequestButtonLable'|transloco}}</h3>
             </div>
             <mat-nav-list>
-                <a class="flex flex-column flex-justify-space-between" mat-list-item>
-                    <div class="icon flex flex-column w-20">
-                        <span class="icon-icon_dashboard"></span>
-                    </div>
-                    <div class="flex flex-column w-100">
-                        <h3>Dashboard</h3>
-                    </div>
-                </a>
-                <a class="flex flex-column flex-justify-space-between" mat-list-item>
-                    <div class="icon flex flex-column w-20">
-                        <span class="icon-google-docs"></span>
-                    </div>
-                    <div class="flex flex-column w-100">
-                        <h3>Boards</h3>
-                    </div>
-                </a>
-                <a class="flex flex-column flex-justify-space-between" mat-list-item>
-                    <div class="icon flex flex-column w-20">
-                        <span class="icon-speed"></span>
-                    </div>
-                    <div class="flex flex-column w-100">
-                        <h3>Perfomance</h3>
-                    </div>
-                </a>
-                <a class="flex flex-column flex-justify-space-between" mat-list-item>
-                    <div class="icon flex flex-column w-20">
-                        <span class="icon-icon_calendar"></span>
-                    </div>
-                    <div class="flex flex-column w-100">
-                        <h3>Calender</h3>
-                    </div>
-                </a>
-                <a class="flex flex-column flex-justify-space-between" mat-list-item>
-                    <div class="icon flex flex-column w-20">
-                        <span class="icon-search"></span>
-                    </div>
-                    <div class="flex flex-column w-100">
-                        <h3>Reports</h3>
-                    </div>
-                </a>
-                <a class="flex flex-column flex-justify-space-between" mat-list-item>
-                    <div class="icon flex flex-column w-20">
-                        <span class="icon-team"></span>
-                    </div>
-                    <div class="flex flex-column w-100">
-                        <h3>User Profile</h3>
-                    </div>
-                </a>
+                <menu-items [menuItems]="menuItems"></menu-items>
             </mat-nav-list>
         </mat-sidenav>
         <mat-sidenav-content>
-            <mat-toolbar color="default">
-                <div class="header-actions flex flex-row flex-align-center">
-                    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon"
-                        (click)="sidenav.toggle()">
-                        <mat-icon>menu</mat-icon>
-                    </button>
-                    <div class="ml-3">
-                        <mat-form-field appearance="outline">
-                            <mat-label>Search job number, names or help</mat-label>
-                            <input matInput placeholder="Search job number, names or help">
-                            <mat-icon matSuffix>search</mat-icon>
-                        </mat-form-field>
-                    </div>
-                </div>
-                <span class="toolbar-icon-spacer"></span>
-                <div class="user-actions flex flex-row flex-align-center">
-                    <button mat-icon-button>
-                        <mat-icon>notifications</mat-icon>
-                        <mat-icon *ngIf="false">notifications_active</mat-icon>
-                    </button>
-                    <h4>Ashan Perera</h4>
-                    <div class="profile-pic ml-1">
-                        <img src="../../../assets/icons/logged-person.png" alt="profile-pic">
-                    </div>
-                </div>
-            </mat-toolbar>
+            <top-tool-bar [sidenav]="sidenav"></top-tool-bar>
             <div class="dashboard-content">
                 <router-outlet></router-outlet>
             </div>

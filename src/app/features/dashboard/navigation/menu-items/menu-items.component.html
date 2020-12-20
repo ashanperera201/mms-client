@@ -1,1 +1,10 @@
-<p>menu-items works!</p>
+<div class="menu-items" *ngIf="menuItems && menuItems.length > 0">
+    <a class="flex flex-column flex-justify-space-between" mat-list-item *ngFor="let menu of menuItems" [routerLink]="menu?.route">
+        <div class="icon flex flex-column w-20">
+            <span [class]="menu.iconClassName"></span>
+        </div>
+        <div class="flex flex-column w-100">
+            <h3>{{menu.menuName}}</h3>
+        </div>
+    </a>
+</div>

@@ -1,0 +1,97 @@
+@import "../../../styles/themes/colour-variable";
+@import "../../../styles/utils/mixins/flex-mixin";
+@import "../../../styles/utils/responsive";
+
+.request-job {
+    padding: 4rem;
+
+    &-section {
+        background-color: $pure-white;
+        box-shadow: 0.6rem 0.6rem 1rem $box-shadow;
+        border-radius: 0.7rem;
+        min-height: 100%;
+    }
+
+    @include respond(phone) {
+        padding: 2rem;
+    }
+
+    &__steps {
+        padding: 1rem 0;
+    }
+    &__content {
+        h3 {
+            font-size: 2.8rem;
+            font-weight: 500;
+            color: $request-content-colour2;
+            text-align: center;
+            padding: 5rem 0 !important;
+
+            @include respond(tab-port) {
+                padding: 2.5rem 0 !important;
+            }
+
+            @include respond(phone) {
+                font-size: 2rem !important;
+            }
+        }
+    }
+}
+
+.step-list {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
+    list-style: none;
+    padding: 0 20%;
+
+    @include respond(phone) {
+        padding: 0 !important;
+    }
+
+    &__item {
+        position: relative;
+    }
+
+    &__item:not(:last-child) {
+        flex: 1 1 auto;
+        &::after {
+            content: "";
+            position: absolute;
+            height: 2px;
+            left: 60px;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: $step-colour;
+            border-radius: 30px;
+        }
+    }
+
+    &__link {
+        border-radius: 50%;
+        border: 2px solid $link-border-colour;
+        padding: 12px;
+        min-width: 48px;
+        @include flex(row, center, null, center);
+        height: 48px;
+        max-width: 48px;
+        font-size: 22px;
+        box-sizing: border-box;
+        color: $header-font-colour;
+        transition: all 0.3s ease-in;
+
+        &.active {
+            background: transparent
+                linear-gradient(90deg, $request-content-lightblue 0%, $request-content-lightpurple 100%) 0% 0% no-repeat
+                padding-box;
+            border: none;
+            color: $pure-white;
+        }
+    }
+}
+
+.btn-footer{
+    width: 90%;
+    margin-top: 5rem;
+}

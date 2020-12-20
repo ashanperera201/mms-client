@@ -1,0 +1,85 @@
+.request-btn {
+    border-radius: 8px;
+    padding: 10px 25px;
+    font-size: 14px;
+    color: #fff;
+    box-sizing: border-box;
+    display: inline-block;
+    transition: all 0.3s ease-in;
+    border: unset;
+    cursor: pointer;
+
+    &.minw {
+        min-width: 118px;
+    }
+
+    &--info {
+        background: transparent linear-gradient(110deg, #65b1ff 0%, #8083fe 100%) 0% 0% no-repeat padding-box;
+    }
+
+    &--select-machine {
+        display: inline-block;
+        font-size: 14px;
+        text-align: center;
+        background: transparent linear-gradient(112deg, #65b1ff 0%, #8083fe 100%) 0% 0% no-repeat padding-box;
+        border-radius: 8px;
+        color: #ffffff;
+        cursor: pointer;
+
+        &-max {
+            padding: 14px;
+            width: 20rem;
+            span {
+                font-size: 30px;
+                margin-top: 5px;
+            }
+        }
+        &-min {
+            padding: 10px;
+            width: 16rem;
+            span {
+                font-size: 20px;
+            }
+        }
+
+        span {
+            display: block;
+            line-height: 1;
+        }
+    }
+
+    &:focus {
+        border: none;
+        outline: unset;
+        box-shadow: unset;
+    }
+}
+
+.request-btn-gap {
+    &:not(:last-child) {
+        margin-right: 15px;
+    }
+}
+
+.btn {
+    top: 749px;
+    left: 1165px;
+    width: 122px;
+    height: 42px;
+    border-radius: 8px;
+    opacity: 1;
+    color: #FFF;
+    border: unset;
+    cursor: pointer;
+
+    &--success {
+        background: transparent linear-gradient(110deg, #0ab43d 0%, #0b9140 100%) 0% 0% no-repeat padding-box;
+    }
+
+
+    &:focus {
+        border: none;
+        outline: unset;
+        box-shadow: unset;
+    }
+}

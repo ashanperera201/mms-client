@@ -1,0 +1,16 @@
+<div class="flex">
+    <div class="w-100 flex flex-justify-space-between flex-align-center">
+        <h2>{{dialogContent?.modalHeader}}</h2>
+        <button mat-icon-button (click)="closeDialog()">
+            <mat-icon>close</mat-icon>
+        </button>
+    </div>
+</div>
+
+<div class="flex flex-justify-center mt-2" *ngIf="dialogContent?.modalContentCode === 'qr-code-content'">
+    <qr-code-content class="w-100 align-txt-center"></qr-code-content>
+</div>
+
+<div class="flex flex-column mt-2 pxy-0-2" *ngIf="dialogContent?.modalContentCode === 'machine-details'">
+    <machine-details-content (afterSave)="machineDetailsAfterSave($event)"></machine-details-content>
+</div>

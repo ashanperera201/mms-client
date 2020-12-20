@@ -1,0 +1,10 @@
+[
+    {
+        "userName": "system",
+        "password": "123",
+        "email": "system@gmail.com",
+        "userId": "49ef2f77-4fb0-4659-814a-632e5ace7cd3",
+        "privateKey": "CDeRX/XGpaV/dagzWriHTq8ZBsVaLSux1o/j4jNw1Jvb1/RGKw7vlkgCRbsI985qZGYsHwmlEabHIMlwzqsv1A==",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyLCJ1c2VyTmFtZSI6InN5c3RlbSIsInBhc3N3b3JkIjoiMTIzIiwiZW1haWwiOiJzeXN0ZW1AZ21haWwuY29tIiwidXNlcklkIjoiNDllZjJmNzctNGZiMC00NjU5LTgxNGEtNjMyZTVhY2U3Y2QzIn0.VV8klJbU6xEe2sTfDHlf6BbchubPWrcKtp2R_hj_ews"
+    }
+]

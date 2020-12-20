@@ -1,1 +1,25 @@
-<p>top-tool-bar works!</p>
+<mat-toolbar color="default">
+    <div class="header-actions flex flex-row flex-align-center">
+        <button mat-icon-button aria-label="icon-button with menu icon" (click)="sidenav.toggle()">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <div class="ml-3">
+            <mat-form-field appearance="outline">
+                <mat-label>{{'dashboardModule.searchLable'|transloco}}</mat-label>
+                <input matInput [placeholder]="'dashboardModule.searchPlaceHolder'|transloco">
+                <mat-icon matSuffix>search</mat-icon>
+            </mat-form-field>
+        </div>
+    </div>
+    <span class="toolbar-icon-spacer"></span>
+    <div class="user-actions flex flex-row flex-align-center">
+        <button mat-icon-button>
+            <mat-icon>notifications</mat-icon>
+            <mat-icon *ngIf="false">notifications_active</mat-icon>
+        </button>
+        <h4>Ashan Perera</h4>
+        <div class="profile-pic ml-1">
+            <img src="../../../assets/icons/logged-person.png" alt="profile-pic">
+        </div>
+    </div>
+</mat-toolbar>

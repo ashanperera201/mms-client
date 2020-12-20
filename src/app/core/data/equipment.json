@@ -1,0 +1,96 @@
+{
+    "statusCode": 200,
+    "message": "Ok",
+    "data": [
+        {
+            "id": "001",
+            "equipmentType": "Equipment-1",
+            "equipments": [
+                {
+                    "id": "1",
+                    "name": "equipment name-1"
+                },
+                {
+                    "id": "2",
+                    "name": "equipment name-2"
+                },
+                {
+                    "id": "3",
+                    "name": "equipment name-3"
+                }
+            ]
+        },
+        {
+            "id": "002",
+            "equipmentType": "Equipment-2",
+            "equipments": [
+                {
+                    "id": "1",
+                    "name": "equipment name-1"
+                },
+                {
+                    "id": "2",
+                    "name": "equipment name-2"
+                },
+                {
+                    "id": "3",
+                    "name": "equipment name-3"
+                }
+            ]
+        },
+        {
+            "id": "003",
+            "equipmentType": "Equipment-3",
+            "equipments": [
+                {
+                    "id": "1",
+                    "name": "equipment name-1"
+                },
+                {
+                    "id": "2",
+                    "name": "equipment name-2"
+                },
+                {
+                    "id": "3",
+                    "name": "equipment name-3"
+                }
+            ]
+        },
+        {
+            "id": "004",
+            "equipmentType": "Equipment-4",
+            "equipments": [
+                {
+                    "id": "1",
+                    "name": "equipment name-1"
+                },
+                {
+                    "id": "2",
+                    "name": "equipment name-2"
+                },
+                {
+                    "id": "3",
+                    "name": "equipment name-3"
+                }
+            ]
+        },
+        {
+            "id": "005",
+            "equipmentType": "Equipment-5",
+            "equipments": [
+                {
+                    "id": "1",
+                    "name": "equipment name-1"
+                },
+                {
+                    "id": "2",
+                    "name": "equipment name-2"
+                },
+                {
+                    "id": "3",
+                    "name": "equipment name-3"
+                }
+            ]
+        }
+    ]
+}

@@ -8,12 +8,13 @@ import { QrCodeComponent } from './qr-code/qr-code.component';
 import { AuthRoutingModule } from './auth.routing';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatButtonModule } from '@angular/material/button';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
-import { AuthenticationService } from '../../core/services-gateway/authentication.service';
+import { NgQrScannerModule } from 'angular2-qrscanner';
+import { TranslocoRootModule } from '../../core/shared/transloco-root.module';
 
 @NgModule({
   declarations: [
@@ -33,10 +34,14 @@ import { AuthenticationService } from '../../core/services-gateway/authenticatio
     MatButtonModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    TranslocoRootModule,
+    MatDialogModule,
+    NgQrScannerModule
   ],
   providers: [
-    AuthenticationService
+  ],
+  entryComponents: [
+    QrCodeComponent
   ]
 })
 export class AuthModule { }

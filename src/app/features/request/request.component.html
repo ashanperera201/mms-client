@@ -1,0 +1,75 @@
+<section class="request-job-section">
+    <div class="request-job">
+        <div class="request-job__steps">
+            <ul class="step-list flex flex-justify-space-around">
+                <li class="step-list__item">
+                    <a class="step-list__link active">1</a>
+                </li>
+                <li class="step-list__item">
+                    <a class="step-list__link">2</a>
+                </li>
+                <li class="step-list__item">
+                    <a class="step-list__link">3</a>
+                </li>
+            </ul>
+        </div>
+        <div class="request-job__content">
+            <h3>{{jobRequestTitle}}</h3>
+            <icon-container (afterSelection)="selectedContainer($event)" *ngIf="!jobRequestSelected"></icon-container>
+
+            <div *ngIf="jobRequestSelected && navigator === 1" id="form-builder" class="form-builder">
+                <div class="p-r-20-perc" *ngFor="let field of formFields">
+                    <div [class]="field.isRow ? 'flex': 'flex-column'">
+                        <div class="flex form-row">
+                            <div class="input-label">
+                                <label [ngClass]="{'required': field?.required}"
+                                    [for]="field?.id">{{field?.label}}</label>
+                            </div>
+                            <div [class]="field?.cssClasses" *ngFor="let fieldItem of field.fields">
+                                <div [ngSwitch]="fieldItem?.type">
+                                    <!-- component button -->
+                                    <div *ngSwitchCase="'button'">
+                                        <button [type]="fieldItem?.type" [class]="fieldItem?.cssClasses"
+                                            (click)="templateFieldButtonClick(fieldItem?.modalContent)">
+                                            {{fieldItem?.buttonField?.buttonLabel}}
+                                            <span [class]="fieldItem?.buttonField?.iconClass"></span>
+                                        </button>
+                                    </div>
+                                    <!-- component text field -->
+                                    <div *ngSwitchCase="'text'">
+                                        <input *ngIf="!fieldItem?.isMultiline" [class]="fieldItem?.cssClasses"
+                                            [type]="fieldItem?.type" [placeholder]="fieldItem?.placeholder"
+                                            [name]="fieldItem?.name" [id]="fieldItem?.id">
+                                        <textarea *ngIf="fieldItem?.isMultiline" [class]="fieldItem?.cssClasses"
+                                            [name]="fieldItem?.name" [placeholder]="fieldItem?.placeholder"
+                                            [id]="fieldItem?.id" rows="50"></textarea>
+                                    </div>
+                                    <!-- component dropdown -->
+                                    <div *ngSwitchCase="'dropdown'">
+                                        <select [id]="fieldItem?.id" [name]="fieldItem?.name"
+                                            [class]="fieldItem?.cssClasses">
+                                            <option *ngFor="let option of fieldItem?.options"
+                                                [disabled]="option?.disable" [selected]="option?.selected"
+                                                [value]="option.key">{{option?.label}}</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div *ngIf="navigator === 2">
+                <h1>hello world</h1>
+            </div>
+
+
+            <div *ngIf="jobRequestSelected" class="btn-footer flex flex-justify-end">
+                <button class="request-btn request-btn--info minw" (click)="navigatePreviousTab()">
+                    < Previous</button>
+                        <button class="ml-2 request-btn request-btn--info minw" (click)="navigateNextTab()"> Next > </button>
+            </div>
+        </div>
+    </div>
+</section>

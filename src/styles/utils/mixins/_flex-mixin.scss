@@ -1,0 +1,9 @@
+@mixin flex($direction, $justify-content, $align-content, $align-items) {
+    display: flex;
+    @if $direction != '' and $justify-content != '' and $align-content != '' and $align-items != '' {
+        flex-direction: $direction;
+        justify-content: $justify-content;
+        align-content: $align-content;
+        align-items: $align-items;
+    }
+}

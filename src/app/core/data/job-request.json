@@ -1,0 +1,262 @@
+[
+    {
+        "id": 1,
+        "jobRequestType": 1,
+        "jobRequestUniqueId": "275998eb-4cd5-4fff-9cc8-7e85a9108e6c",
+        "mainHeader": "Request",
+        "imgSource": "../../../../assets/icons/asset.svg",
+        "jobRequests": [
+            {
+                "id": 1,
+                "className": "ee",
+                "clockImgSource": "../../../../assets/icons/wall-clock.svg",
+                "dateAndTime": "5 August, 2020 11.55 AM",
+                "requestType": "EE",
+                "requestDescription": "Fuse break down, Trip issue",
+                "progress": 25,
+                "rId": 3260,
+                "commentIcon": "icon-maintainance",
+                "attachIcon": "icon-paperclip",
+                "totalComments": 3,
+                "totalAttaches": 4
+            },
+            {
+                "id": 2,
+                "className": "project",
+                "clockImgSource": "../../../../assets/icons/wall-clock.svg",
+                "dateAndTime": "5 August, 2020 11.55 AM",
+                "requestType": "Project",
+                "requestDescription": "Fuse break down, Trip issue",
+                "progress": 55,
+                "rId": 3260,
+                "commentIcon": "icon-maintainance",
+                "attachIcon": "icon-paperclip",
+                "totalComments": 3,
+                "totalAttaches": 4
+            },
+            {
+                "id": 2,
+                "className": "mm",
+                "clockImgSource": "../../../../assets/icons/wall-clock.svg",
+                "dateAndTime": "5 August, 2020 11.55 AM",
+                "requestType": "MM",
+                "requestDescription": "Fuse break down, Trip issue",
+                "progress": 22,
+                "rId": 3260,
+                "commentIcon": "icon-maintainance",
+                "attachIcon": "icon-paperclip",
+                "totalComments": 3,
+                "totalAttaches": 4
+            },
+            {
+                "id": 1,
+                "className": "ee",
+                "clockImgSource": "../../../../assets/icons/wall-clock.svg",
+                "dateAndTime": "5 August, 2020 11.55 AM",
+                "requestType": "EE",
+                "requestDescription": "Fuse break down, Trip issue",
+                "progress": 33,
+                "rId": 3260,
+                "commentIcon": "icon-maintainance",
+                "attachIcon": "icon-paperclip",
+                "totalComments": 3,
+                "totalAttaches": 4
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "jobRequestType": 2,
+        "jobRequestUniqueId": "dc4f517c-21ed-416b-b2d6-c6788f90fcf8",
+        "mainHeader": "Open",
+        "imgSource": "../../../../assets/icons/asset.svg",
+        "jobRequests": [
+            {
+                "id": 1,
+                "className": "ee",
+                "clockImgSource": "../../../../assets/icons/wall-clock.svg",
+                "dateAndTime": "5 August, 2020 11.55 AM",
+                "requestType": "EE",
+                "requestDescription": "Fuse break down, Trip issue",
+                "progress": 66,
+                "rId": 3260,
+                "commentIcon": "icon-maintainance",
+                "attachIcon": "icon-paperclip",
+                "totalComments": 3,
+                "totalAttaches": 4
+            },
+            {
+                "id": 2,
+                "className": "project",
+                "clockImgSource": "../../../../assets/icons/wall-clock.svg",
+                "dateAndTime": "5 August, 2020 11.55 AM",
+                "requestType": "Project",
+                "requestDescription": "Fuse break down, Trip issue",
+                "progress": 88,
+                "rId": 3260,
+                "commentIcon": "icon-maintainance",
+                "attachIcon": "icon-paperclip",
+                "totalComments": 3,
+                "totalAttaches": 4
+            },
+            {
+                "id": 2,
+                "className": "mm",
+                "clockImgSource": "../../../../assets/icons/wall-clock.svg",
+                "dateAndTime": "5 August, 2020 11.55 AM",
+                "requestType": "MM",
+                "requestDescription": "Fuse break down, Trip issue",
+                "progress": 44,
+                "rId": 3260,
+                "commentIcon": "icon-maintainance",
+                "attachIcon": "icon-paperclip",
+                "totalComments": 3,
+                "totalAttaches": 4
+            },
+            {
+                "id": 1,
+                "className": "ee",
+                "clockImgSource": "../../../../assets/icons/wall-clock.svg",
+                "dateAndTime": "5 August, 2020 11.55 AM",
+                "requestType": "EE",
+                "requestDescription": "Fuse break down, Trip issue",
+                "progress": 44,
+                "rId": 3260,
+                "commentIcon": "icon-maintainance",
+                "attachIcon": "icon-paperclip",
+                "totalComments": 3,
+                "totalAttaches": 4
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "jobRequestType": 3,
+        "jobRequestUniqueId": "96a61a2f-a77a-4093-93fb-b2b3518a711f",
+        "mainHeader": "Waiting for Acknowledgement",
+        "imgSource": "../../../../assets/icons/asset.svg",
+        "jobRequests": [
+            {
+                "id": 1,
+                "className": "ee",
+                "clockImgSource": "../../../../assets/icons/wall-clock.svg",
+                "dateAndTime": "5 August, 2020 11.55 AM",
+                "requestType": "EE",
+                "requestDescription": "Fuse break down, Trip issue",
+                "progress": 25,
+                "rId": 3260,
+                "commentIcon": "icon-maintainance",
+                "attachIcon": "icon-paperclip",
+                "totalComments": 3,
+                "totalAttaches": 4
+            },
+            {
+                "id": 2,
+                "className": "project",
+                "clockImgSource": "../../../../assets/icons/wall-clock.svg",
+                "dateAndTime": "5 August, 2020 11.55 AM",
+                "requestType": "Project",
+                "requestDescription": "Fuse break down, Trip issue",
+                "progress": 25,
+                "rId": 3260,
+                "commentIcon": "icon-maintainance",
+                "attachIcon": "icon-paperclip",
+                "totalComments": 3,
+                "totalAttaches": 4
+            },
+            {
+                "id": 2,
+                "className": "mm",
+                "clockImgSource": "../../../../assets/icons/wall-clock.svg",
+                "dateAndTime": "5 August, 2020 11.55 AM",
+                "requestType": "MM",
+                "requestDescription": "Fuse break down, Trip issue",
+                "progress": 11,
+                "rId": 3260,
+                "commentIcon": "icon-maintainance",
+                "attachIcon": "icon-paperclip",
+                "totalComments": 3,
+                "totalAttaches": 4
+            },
+            {
+                "id": 1,
+                "className": "ee",
+                "clockImgSource": "../../../../assets/icons/wall-clock.svg",
+                "dateAndTime": "5 August, 2020 11.55 AM",
+                "requestType": "EE",
+                "requestDescription": "Fuse break down, Trip issue",
+                "progress": 23,
+                "rId": 3260,
+                "commentIcon": "icon-maintainance",
+                "attachIcon": "icon-paperclip",
+                "totalComments": 3,
+                "totalAttaches": 4
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "jobRequestType": 4,
+        "jobRequestUniqueId": "c8e2a1cb-52cb-4df9-b617-a049f7d73c36",
+        "mainHeader": "Closed",
+        "imgSource": "../../../../assets/icons/asset.svg",
+        "jobRequests": [
+            {
+                "id": 1,
+                "className": "ee",
+                "clockImgSource": "../../../../assets/icons/wall-clock.svg",
+                "dateAndTime": "5 August, 2020 11.55 AM",
+                "requestType": "EE",
+                "requestDescription": "Fuse break down, Trip issue",
+                "progress": 99,
+                "rId": 3260,
+                "commentIcon": "icon-maintainance",
+                "attachIcon": "icon-paperclip",
+                "totalComments": 3,
+                "totalAttaches": 4
+            },
+            {
+                "id": 2,
+                "className": "project",
+                "clockImgSource": "../../../../assets/icons/wall-clock.svg",
+                "dateAndTime": "5 August, 2020 11.55 AM",
+                "requestType": "Project",
+                "requestDescription": "Fuse break down, Trip issue",
+                "progress": 77,
+                "rId": 3260,
+                "commentIcon": "icon-maintainance",
+                "attachIcon": "icon-paperclip",
+                "totalComments": 3,
+                "totalAttaches": 4
+            },
+            {
+                "id": 2,
+                "className": "mm",
+                "clockImgSource": "../../../../assets/icons/wall-clock.svg",
+                "dateAndTime": "5 August, 2020 11.55 AM",
+                "requestType": "MM",
+                "requestDescription": "Fuse break down, Trip issue",
+                "progress": 66,
+                "rId": 3260,
+                "commentIcon": "icon-maintainance",
+                "attachIcon": "icon-paperclip",
+                "totalComments": 3,
+                "totalAttaches": 4
+            },
+            {
+                "id": 1,
+                "className": "ee",
+                "clockImgSource": "../../../../assets/icons/wall-clock.svg",
+                "dateAndTime": "5 August, 2020 11.55 AM",
+                "requestType": "EE",
+                "requestDescription": "Fuse break down, Trip issue",
+                "progress": 38,
+                "rId": 3260,
+                "commentIcon": "icon-maintainance",
+                "attachIcon": "icon-paperclip",
+                "totalComments": 3,
+                "totalAttaches": 4
+            }
+        ]
+    }
+]

@@ -1,0 +1,21 @@
+{
+    "loginModule": {
+        "mainHeader": "",
+        "formAttributes": {
+            "userName": "",
+            "password": "",
+            "rememberMe": "",
+            "loginButton": "",
+            "qrCode": "",
+            "forgotPassword": ""
+        }
+    },
+    "dashboardModule": {
+        "sidenavHeader": "",
+        "newRequestButtonLable": "",
+        "dashboardMainHeader": "",
+        "requestHeader": "",
+        "searchPlaceHolder": "",
+        "searchLable": ""
+    }
+}
